@@ -51,7 +51,7 @@
 
 ## V. UML (OOAD)
 
-* **Design Model**
+* **Design Model(StarUML)**
 
 * ![1558492362278](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1558492362278.png)
 
@@ -66,7 +66,8 @@
 * **Encapsulation**
 * **Inheritance**
 * **Polymorphism**
-* 
+
+
 
 > Abstraction
 >
