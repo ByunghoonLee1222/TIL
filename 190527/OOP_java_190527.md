@@ -60,13 +60,18 @@ class Child extends Parent{
 ```
 
 * **Overriding 조건**
-  * 조상 클래스의 메서드와 이름이 같아야 한다.
-  * 매개변수가 같아야 한다.
-  * 반환타입이 같아야 한다.
+  * 조상 클래스의 메서드와 **이름**이 같아야 한다.
+  * **매개변수**가 같아야 한다.
+  * **반환타입**이 같아야 한다.
+  * **static**은 overriding 할 수 없다.
 
 ## Super
 
 * 자손 클래스에서 조상 클래스로부터 상속받은 멤버를 참조하는데 사용되는 참조 변수
+
+* super(); -> 생성자에서 상위 클래스 호출할 때
+
+* 
 
   ```java
   	public Circle(Point point, int radius) {
@@ -96,19 +101,25 @@ class Child extends Parent{
 
 * 같은 커멘드에 포함된 각 클래스별 동작은 다르다.(ex. getArea에 Circle, Rectangle, Triangle다름)
 
+* 하위 클래스에만 있는 메서드는 실행 불가
+
   ```java
-  	for(Shape sh: s) {
+  Shape s = new Circle();	
+  for(Shape sh: s) {
   	
   			System.out.println(sh.toString());
   			System.out.println(sh.getArea());
   			System.out.println(sh.getCircume());
+}
   ```
-
+  
   
 
 ## instanceof
 
-* 객체 비교 후 type변환
+* 하위 클래스에만 있는 메서드 실행 시
+
+* 객체 비교 후 type변환 ( Circle c = new Sahpe 불가 )
 
   ```java
   		for(Shape sh: s) {
